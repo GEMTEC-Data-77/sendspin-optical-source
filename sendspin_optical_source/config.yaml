@@ -1,5 +1,5 @@
 name: "Sendspin Optical Source"
-version: "0.3.1"
+version: "0.3.2"
 slug: "sendspin_optical_source"
 description: >-
   Publishes a Home Assistant OS PulseAudio capture source (such as a Cubilux
