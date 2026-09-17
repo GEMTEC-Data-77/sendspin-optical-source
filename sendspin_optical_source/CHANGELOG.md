@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1
+
+- Added the app homepage URL so Home Assistant's "Visit the Sendspin Optical Source page for more details" link opens the GitHub repository.
+- Changed the app README link to an absolute GitHub URL so it works correctly when rendered inside Home Assistant.
+
 ## 0.3.0
 
 - First GitHub repository-packaged stable release.
