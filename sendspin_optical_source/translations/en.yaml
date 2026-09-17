@@ -1,0 +1,37 @@
+configuration:
+  source_name:
+    name: Source name
+    description: Friendly name shown in Music Assistant.
+  pulse_source_match:
+    name: PulseAudio source match
+    description: Case-insensitive text used to select the capture source. "Cubilux" is recommended initially.
+  sample_rate:
+    name: Sample rate
+    description: Capture rate in Hz. Use 48000 for the Cubilux S/PDIF input initially.
+  channels:
+    name: Channels
+    description: 2 for stereo; 1 for mono.
+  listen_port:
+    name: Sendspin listen port
+    description: TCP port advertised by the source client. Default is 8930.
+  log_level:
+    name: Log level
+    description: Logging verbosity.
+  list_sources_only:
+    name: List sources only
+    description: Enumerate PulseAudio capture sources in the log and exit without starting Sendspin.
+  audio_diagnostics:
+    name: Audio diagnostics
+    description: Enable detailed PCM level and jitter-buffer statistics. Diagnostic entries are written at DEBUG level.
+  jitter_buffer_ms:
+    name: Jitter buffer startup
+    description: Audio to pre-buffer before transmission. 100 ms is the tested baseline.
+  max_buffer_ms:
+    name: Maximum jitter buffer
+    description: Maximum queued PCM before the oldest packet is dropped. 500 ms is recommended initially.
+  capture_latency_ms:
+    name: PulseAudio capture latency
+    description: Requested parec/PulseAudio capture latency in milliseconds. 40 ms is recommended initially.
+  capture_process_ms:
+    name: PulseAudio process interval
+    description: Requested parec/PulseAudio processing interval in milliseconds. 20 ms is recommended initially.
