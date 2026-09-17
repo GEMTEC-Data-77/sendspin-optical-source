@@ -1,0 +1,40 @@
+name: "Sendspin Optical Source"
+version: "0.3.0"
+slug: "sendspin_optical_source"
+description: >-
+  Publishes a Home Assistant OS PulseAudio capture source (such as a Cubilux
+  USB-C S/PDIF receiver) to Music Assistant as a paired Sendspin source@v1 live input.
+arch:
+  - amd64
+  - aarch64
+startup: application
+boot: auto
+init: false
+host_network: true
+audio: true
+options:
+  source_name: "Optical Input"
+  pulse_source_match: "Cubilux"
+  sample_rate: 48000
+  channels: 2
+  listen_port: 8930
+  log_level: "info"
+  list_sources_only: false
+  audio_diagnostics: false
+  jitter_buffer_ms: 100
+  max_buffer_ms: 500
+  capture_latency_ms: 40
+  capture_process_ms: 20
+schema:
+  source_name: str
+  pulse_source_match: str
+  sample_rate: int(8000,192000)
+  channels: int(1,2)
+  listen_port: port
+  log_level: list(debug|info|warning|error)
+  list_sources_only: bool
+  audio_diagnostics: bool
+  jitter_buffer_ms: int(40,1000)
+  max_buffer_ms: int(100,2000)
+  capture_latency_ms: int(10,500)
+  capture_process_ms: int(5,250)
