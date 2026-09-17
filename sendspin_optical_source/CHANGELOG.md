@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2
+
+- Added custom Sendspin Optical Source branding assets for Home Assistant.
+- Added a 128x128 app icon and 250x100 app logo.
+
 ## 0.3.1
 
 - Added the app homepage URL so Home Assistant's "Visit the Sendspin Optical Source page for more details" link opens the GitHub repository.
