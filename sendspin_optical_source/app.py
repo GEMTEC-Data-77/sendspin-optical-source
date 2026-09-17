@@ -31,8 +31,8 @@ CHANNELS = int(os.getenv("CHANNELS", "2"))
 LISTEN_PORT = int(os.getenv("LISTEN_PORT", "8930"))
 LOG_LEVEL = os.getenv("LOG_LEVEL", "info").upper()
 LIST_SOURCES_ONLY = os.getenv("LIST_SOURCES_ONLY", "false").lower() == "true"
-AUDIO_DIAGNOSTICS = os.getenv("AUDIO_DIAGNOSTICS", "true").lower() == "true"
-JITTER_BUFFER_MS = int(os.getenv("JITTER_BUFFER_MS", "160"))
+AUDIO_DIAGNOSTICS = os.getenv("AUDIO_DIAGNOSTICS", "false").lower() == "true"
+JITTER_BUFFER_MS = int(os.getenv("JITTER_BUFFER_MS", "100"))
 MAX_BUFFER_MS = int(os.getenv("MAX_BUFFER_MS", "500"))
 CAPTURE_LATENCY_MS = int(os.getenv("CAPTURE_LATENCY_MS", "40"))
 CAPTURE_PROCESS_MS = int(os.getenv("CAPTURE_PROCESS_MS", "20"))
