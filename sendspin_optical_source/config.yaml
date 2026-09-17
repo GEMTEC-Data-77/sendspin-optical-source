@@ -1,9 +1,10 @@
 name: "Sendspin Optical Source"
-version: "0.3.0"
+version: "0.3.1"
 slug: "sendspin_optical_source"
 description: >-
   Publishes a Home Assistant OS PulseAudio capture source (such as a Cubilux
   USB-C S/PDIF receiver) to Music Assistant as a paired Sendspin source@v1 live input.
+url: "https://github.com/GEMTEC-Data-77/sendspin-optical-source"
 arch:
   - amd64
   - aarch64
